@@ -11,6 +11,17 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  min-height: 72vh;
+  justify-content: center;
+}
+
 .favButton{
   background-color: rgba(136, 136, 136, 0.116);
   padding: 10px;
@@ -23,9 +34,13 @@ h1{
   text-align: center;
 }
 
+.h1-form {
+  height: 100px;
+}
+
 nav{
   width: 100%;
-  height: 60px;
+  height: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +98,6 @@ footer {
   align-items: center;
   height: 100px;
   background-color: #376998;
-  position: absolute;
   bottom: 0;
   width: 100%;
   margin: 0;
@@ -119,28 +133,84 @@ form{
   margin: 0 auto;
 }
 
-.card{
+.card-dark{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
   width: 200px;
   padding: 0.5rem 0.5rem 0 0.5rem;
-  border: 0.5px solid rgb(136, 136, 136);
+  border: 2px solid rgb(20, 123, 202);
+  border-radius: 20px;
+  background-color:  rgb(44, 44, 44);
+}
+
+.card {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  width: 200px;
+  padding: 0.5rem 0.5rem 0 0.5rem;
+  border: 2px solid rgb(136, 136, 136);
+  border-radius: 20px;
+  margin: 10px auto;
 }
 
 .card:hover{
-  border: 0.5px solid rgb(206, 217, 142);
+  border: 10px solid  rgb(20, 123, 202);
+  background-color:  rgba(73, 118, 163, 0.178);
+
+}
+
+.card-dark:hover{
+  border: 10px solid  rgb(20, 123, 202);
+  background-color:  rgba(217, 219, 221, 0.808);
 }
 
 .card-grid{
   display: flex;
   justify-content: space-evenly;
-  gap: 1rem;
-  width: 90vw;
+  gap: 10px;
+  width: 90%;
   height: auto;
   flex-wrap: wrap;
   margin: 0 auto;
+}
+
+.favButton{
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border: 2px solid rgb(136, 136, 136);
+  width: 80%;
+  border-radius: 10px;
+  height: 10%;
+  cursor: pointer;
+  margin: 10px auto;
+  transition-duration: 0.2s;
+  flex-direction: row;
+  justify-items: center;
+  color: rgb(20, 123, 202);
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.favButton:hover {
+  background-color: rgb(20, 123, 202);
+  color: white;
+}
+
+.dentistDetail{
+  justify-content: center; 
+  align-items: center;
+  text-align:center;
+  color: rgb(20, 123, 202);
+  font-size: 18px;
+  margin-left: 38%;
+  width:25%;
+  background-color: azure;
+  border: 2px solid;
+  border-radius: 5%;
 }
 
 table {
@@ -150,6 +220,43 @@ table {
   display: table;
   border: 1px solid #ccc;
 
+}
+
+.form{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 520px;
+  width: 500px;
+  border: 2px solid rgb(136, 136, 136);
+  border-radius: 20px;
+  margin: 10px auto;
+}
+
+Form{
+  margin-bottom: 100px;
+}
+
+.enviarForm{
+  width: 100%;
+  height: 35px;
+  background-color: rgba(129, 90, 90, 0.116);
+  border: 2px solid rgb(83, 83, 83);
+  border-radius: 4px;
+  cursor: pointer;
+  color: rgb(53, 108, 190);
+  font-weight: bold;
+}
+
+.input-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nye {
+  height: 25px;
 }
 
 td, th {
@@ -163,7 +270,7 @@ tr:nth-child(even) {
 }
 
 .dark{
-  background-color: #12121296;
+  background-color: #212121;
   color: white;
 }
 .dark > a {

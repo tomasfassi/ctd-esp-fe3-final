@@ -32,14 +32,12 @@ const Form = () => {
   return (
     <div>
       <form onSubmit={handleSubmit}>
-        <div className="form-group">
-          <label>Nombre</label>
-          <input type= "text" name="nombre" onChange={handleChange}/>
+        <div class="input-form">
+          <input class="nye" type= "text" placeholder="Nombre..." onChange={handleChange}/>
+          <br/>
+          <input class="nye" type= "email" placeholder="Email..." onChange={handleChange}/>
           <br/> 
-          <label>Email</label>
-          <input type= "email" name="email" onChange={handleChange}/>
-          <br/> 
-          <button className="butForm">Enviar</button>
+          <button class="enviarForm">Enviar</button>
         </div>
       </form>
     </div>

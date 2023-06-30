@@ -5,7 +5,7 @@ export const initialState = {theme: "", data: []}
 export const ContextGlobal = createContext(undefined);
 
 
-//Para el theme
+//Theme
 const themes = {
   dark:{
     theme:false,
